@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mexico OPS</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#081316">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mexico OPS">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap">
+<style>
+/* Una sola pantalla oscura, con la identidad del encabezado de Mexico OPS. */
+:root {
+  color-scheme: dark;
+  --noche: #081316; --panel: #0E2024; --linea: #24444A; --texto: #EAF4F0; --suave: #A8BFBC;
+  --verde: #63D886; --teal: #338087; --tinta: #05201C;
+  --titulo: "Rajdhani", "Arial Narrow", system-ui, sans-serif;
+  --cuerpo: "Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body {
+  margin: 0; color: var(--texto); font: 400 16px/1.5 var(--cuerpo);
+  background: radial-gradient(90% 55% at 15% 0%, #1B5A5C66, transparent 70%), radial-gradient(70% 45% at 100% 100%, #63D8861F, transparent 70%), var(--noche);
+  background-attachment: fixed;
+  padding: max(28px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(28px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  display: grid; place-items: center;
+}
+[hidden] { display: none !important; }
+main { width: 100%; max-width: 430px; display: grid; gap: 26px; }
+.marca { display: grid; gap: 22px; justify-items: start; }
+.fortress { width: 142px; height: auto; display: block; }
+.ops-mark { position: relative; display: inline-flex; align-items: center; gap: .3em; margin: 0; padding: .16em .34em .14em; font: 700 clamp(38px, 12vw, 52px)/1 var(--titulo); text-transform: uppercase; white-space: nowrap; }
+.ops-mark::before, .ops-mark::after { content: ""; position: absolute; width: .42em; height: .42em; border: 2px solid var(--verde); }
+.ops-mark::before { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+.ops-mark::after { right: 0; bottom: 0; border-left: 0; border-top: 0; }
+.ops-mx { letter-spacing: .13em; background: linear-gradient(92deg, #FFF 0%, #E3F8EC 62%, var(--verde) 118%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ops-tag { position: relative; display: inline-block; overflow: hidden; padding: .1em .4em .07em; transform: skewX(-12deg); background: linear-gradient(135deg, #7CE79C, var(--teal)); box-shadow: 0 0 0 1px #63D88666, 0 0 24px #63D88647, inset 0 1px 0 #FFFFFF66; }
+.ops-tag b { display: inline-block; transform: skewX(12deg); letter-spacing: .1em; color: var(--tinta); }
+.ops-tag::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, #FFFFFF00 34%, #FFFFFF99 50%, #FFFFFF00 66%); transform: translateX(-130%); animation: brillo 1.3s .4s ease-out 1 both; }
+@keyframes brillo { to { transform: translateX(130%); } }
+.lema { margin: -10px 0 0; color: var(--suave); }
+.vista { display: grid; gap: 18px; }
+h2 { margin: 0; font: 700 25px/1.15 var(--titulo); letter-spacing: .01em; }
+ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; counter-reset: paso; }
+ol li { counter-increment: paso; display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; }
+ol li::before { content: counter(paso); display: grid; place-items: center; width: 32px; height: 32px; background: #63D8861F; border: 1px solid #63D88666; color: var(--verde); font: 700 18px/1 var(--titulo); }
+ol b { font-weight: 600; }
+.btn { display: flex; align-items: center; justify-content: center; min-height: 56px; padding: 12px 20px; border: 0; font: 700 20px/1.1 var(--titulo); letter-spacing: .03em; text-decoration: none; text-align: center; cursor: pointer; color: var(--tinta); background: linear-gradient(135deg, #7CE79C, #46A98F); box-shadow: 0 0 24px #63D88638; }
+.btn.sec { color: var(--texto); background: var(--panel); box-shadow: inset 0 0 0 1px var(--linea); }
+.btn:focus-visible { outline: 3px solid #FFF; outline-offset: 2px; }
+.dir { padding: 12px 14px; background: var(--panel); border: 1px solid var(--linea); font-size: 15px; overflow-wrap: anywhere; user-select: all; }
+.nota { margin: 0; font-size: 14px; color: var(--suave); }
+@media (prefers-reduced-motion: reduce) { .ops-tag::after { animation: none; opacity: 0; } }
+</style>
+</head>
+<body>
+<main>
+  <header class="marca">
+    <img class="fortress" src="icons/logo-fortress-blanco.png" alt="Fortress Power" width="1160" height="488">
+    <h1 class="ops-mark" aria-label="Mexico OPS"><span class="ops-mx">Mexico</span><span class="ops-tag"><b>OPS</b></span></h1>
+    <p class="lema">Instaladores, distribuidores, inventario y proyectos en un solo lugar.</p>
+  </header>
+
+  <section class="vista" data-v="app" hidden>
+    <h2 id="app-tit">Abriendo Mexico OPS</h2>
+    <a class="btn" id="entrar" href="#" target="_blank" rel="noopener noreferrer">Entrar a Mexico OPS</a>
+    <p class="nota">Si te pide iniciar sesión, usa la cuenta de Claude con la que te invitaron.</p>
+  </section>
+
+  <section class="vista" data-v="android" hidden>
+    <h2>Instálala en tu Android</h2>
+    <button class="btn" id="instalar" type="button" hidden>Instalar app</button>
+    <ol id="pasos-android">
+      <li><span>Abre esta página en <b>Chrome</b>.</span></li>
+      <li><span>Toca el menú <b>⋮</b> de arriba a la derecha.</span></li>
+      <li><span>Elige <b>Instalar app</b> o <b>Agregar a la pantalla principal</b>.</span></li>
+    </ol>
+    <p class="nota" id="android-listo" hidden>Listo. Busca el ícono de Mexico OPS en tu celular.</p>
+    <a class="btn sec" data-torre href="#" target="_blank" rel="noopener noreferrer">Abrir sin instalar</a>
+  </section>
+
+  <section class="vista" data-v="ios" hidden>
+    <h2>Instálala en tu iPhone</h2>
+    <ol>
+      <li><span>Abre esta página en <b>Safari</b>.</span></li>
+      <li><span>Toca <b>Compartir</b>, el cuadro con la flecha hacia arriba.</span></li>
+      <li><span>Elige <b>Agregar a inicio</b> y toca <b>Agregar</b>.</span></li>
+    </ol>
+    <a class="btn sec" data-torre href="#" target="_blank" rel="noopener noreferrer">Abrir sin instalar</a>
+  </section>
+
+  <section class="vista" data-v="pc" hidden>
+    <h2>Instálala en tu celular</h2>
+    <p class="nota">Abre esta dirección en tu teléfono y sigue los pasos que te muestre.</p>
+    <div class="dir" id="dir"></div>
+    <a class="btn" data-torre href="#" target="_blank" rel="noopener noreferrer">Abrir Mexico OPS aquí</a>
+  </section>
+</main>
+<script>
+(() => {
+  const TORRE = 'https://claude.ai/artifact/6Dbe3i2Psot6HUAgzaiKSp';
+  const ua = navigator.userAgent;
+  const esIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const esAndroid = /Android/.test(ua);
+  const instalada = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  const ver = v => document.querySelector(`[data-v="${v}"]`).hidden = false;
+
+  document.getElementById('entrar').href = TORRE;
+  document.querySelectorAll('[data-torre]').forEach(a => a.href = TORRE);
+  document.getElementById('dir').textContent = location.origin + location.pathname;
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+
+  if (instalada) {
+    ver('app');
+    if (esIOS) { document.getElementById('app-tit').textContent = 'Todo listo'; return; }
+    let abierta = false;
+    try { abierta = sessionStorage.getItem('ops-abierta') === '1'; sessionStorage.setItem('ops-abierta', '1'); } catch (e) {}
+    if (abierta) document.getElementById('app-tit').textContent = 'Todo listo';
+    else location.replace(TORRE);
+    return;
+  }
+  ver(esIOS ? 'ios' : esAndroid ? 'android' : 'pc');
+
+  let aviso = null;
+  const boton = document.getElementById('instalar');
+  addEventListener('beforeinstallprompt', e => {
+    e.preventDefault(); aviso = e; boton.hidden = false;
+    document.getElementById('pasos-android').hidden = true;
+  });
+  boton.addEventListener('click', async () => {
+    if (!aviso) return;
+    aviso.prompt(); await aviso.userChoice; aviso = null; boton.hidden = true;
+    document.getElementById('pasos-android').hidden = false;
+  });
+  addEventListener('appinstalled', () => {
+    boton.hidden = true;
+    document.getElementById('pasos-android').hidden = true;
+    document.getElementById('android-listo').hidden = false;
+  });
+})();
+</script>
+</body>
+</html>
